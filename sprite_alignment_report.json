@@ -1,0 +1,673 @@
+{
+  "lvl1": {
+    "down": {
+      "file": "LVL1/sprite_down_lvl1.png",
+      "image_size": [
+        2124,
+        346
+      ],
+      "frame_size": [
+        354,
+        346
+      ],
+      "frames": 6,
+      "fps": 10,
+      "bbox_width_range": [
+        271,
+        325
+      ],
+      "bbox_height_range": [
+        321,
+        341
+      ],
+      "foot_x_before": [
+        215.8,
+        218.6
+      ],
+      "foot_y_before": [
+        342.0,
+        342.0
+      ],
+      "target_anchor": [
+        217.8,
+        342.0
+      ],
+      "max_shift_x": 2,
+      "max_shift_y": 0
+    },
+    "right": {
+      "file": "LVL1/sprite_right_lvl1.png",
+      "image_size": [
+        2388,
+        356
+      ],
+      "frame_size": [
+        398,
+        356
+      ],
+      "frames": 6,
+      "fps": 10,
+      "bbox_width_range": [
+        327,
+        398
+      ],
+      "bbox_height_range": [
+        347,
+        356
+      ],
+      "foot_x_before": [
+        171.5,
+        253.4
+      ],
+      "foot_y_before": [
+        355.0,
+        355.0
+      ],
+      "target_anchor": [
+        229.3,
+        355.0
+      ],
+      "max_shift_x": 58,
+      "max_shift_y": 0
+    },
+    "downRight": {
+      "file": "LVL1/sprite_downright_lvl1.png",
+      "image_size": [
+        2958,
+        358
+      ],
+      "frame_size": [
+        493,
+        358
+      ],
+      "frames": 6,
+      "fps": 10,
+      "bbox_width_range": [
+        385,
+        493
+      ],
+      "bbox_height_range": [
+        303,
+        358
+      ],
+      "foot_x_before": [
+        217.7,
+        492.0
+      ],
+      "foot_y_before": [
+        329.0,
+        357.0
+      ],
+      "target_anchor": [
+        448.0,
+        357.0
+      ],
+      "max_shift_x": 230,
+      "max_shift_y": 28
+    },
+    "upRight": {
+      "file": "LVL1/sprite_upright_lvl1.png",
+      "image_size": [
+        1836,
+        306
+      ],
+      "frame_size": [
+        306,
+        306
+      ],
+      "frames": 6,
+      "fps": 10,
+      "bbox_width_range": [
+        249,
+        306
+      ],
+      "bbox_height_range": [
+        290,
+        306
+      ],
+      "foot_x_before": [
+        150.7,
+        258.8
+      ],
+      "foot_y_before": [
+        297.0,
+        305.0
+      ],
+      "target_anchor": [
+        187.8,
+        305.0
+      ],
+      "max_shift_x": 71,
+      "max_shift_y": 8
+    },
+    "up": {
+      "file": "LVL1/sprite_up_lvl1.png",
+      "image_size": [
+        2272,
+        326
+      ],
+      "frame_size": [
+        284,
+        326
+      ],
+      "frames": 8,
+      "fps": 10,
+      "bbox_width_range": [
+        222,
+        276
+      ],
+      "bbox_height_range": [
+        312,
+        318
+      ],
+      "foot_x_before": [
+        88.5,
+        146.0
+      ],
+      "foot_y_before": [
+        321.0,
+        321.0
+      ],
+      "target_anchor": [
+        105.4,
+        321.0
+      ],
+      "max_shift_x": 41,
+      "max_shift_y": 0
+    },
+    "idleFront": {
+      "file": "LVL1/sprite_idlefront_lvl1.png",
+      "image_size": [
+        1722,
+        344
+      ],
+      "frame_size": [
+        287,
+        344
+      ],
+      "frames": 6,
+      "fps": 6,
+      "bbox_width_range": [
+        245,
+        283
+      ],
+      "bbox_height_range": [
+        312,
+        340
+      ],
+      "foot_x_before": [
+        175.3,
+        200.6
+      ],
+      "foot_y_before": [
+        341.0,
+        341.0
+      ],
+      "target_anchor": [
+        183.4,
+        341.0
+      ],
+      "max_shift_x": 17,
+      "max_shift_y": 0
+    },
+    "idleBack": {
+      "file": "LVL1/sprite_idleback_lvl1.png",
+      "image_size": [
+        1422,
+        338
+      ],
+      "frame_size": [
+        237,
+        338
+      ],
+      "frames": 6,
+      "fps": 6,
+      "bbox_width_range": [
+        237,
+        237
+      ],
+      "bbox_height_range": [
+        312,
+        338
+      ],
+      "foot_x_before": [
+        77.2,
+        156.1
+      ],
+      "foot_y_before": [
+        324.0,
+        337.0
+      ],
+      "target_anchor": [
+        121.6,
+        337.0
+      ],
+      "max_shift_x": 44,
+      "max_shift_y": 13
+    },
+    "attack": {
+      "file": "LVL1/sprite_attack_lvl1.png",
+      "image_size": [
+        4016,
+        386
+      ],
+      "frame_size": [
+        251,
+        386
+      ],
+      "frames": 16,
+      "fps": 16,
+      "bbox_width_range": [
+        187,
+        247
+      ],
+      "bbox_height_range": [
+        246,
+        378
+      ],
+      "foot_x_before": [
+        4.4,
+        241.0
+      ],
+      "foot_y_before": [
+        319.0,
+        381.0
+      ],
+      "target_anchor": [
+        176.7,
+        381.0
+      ],
+      "max_shift_x": 172,
+      "max_shift_y": 62
+    },
+    "death": {
+      "file": "LVL1/sprite_death_lvl1.png",
+      "image_size": [
+        6880,
+        400
+      ],
+      "frame_size": [
+        344,
+        400
+      ],
+      "frames": 20,
+      "fps": 12,
+      "bbox_width_range": [
+        110,
+        344
+      ],
+      "bbox_height_range": [
+        119,
+        400
+      ],
+      "foot_x_before": [
+        8.8,
+        286.5
+      ],
+      "foot_y_before": [
+        385.0,
+        399.0
+      ],
+      "target_anchor": [
+        182.3,
+        399.0
+      ],
+      "max_shift_x": 173,
+      "max_shift_y": 14
+    }
+  },
+  "lvl2": {
+    "down": {
+      "file": "LVL2/sprite_down.png",
+      "image_size": [
+        6880,
+        464
+      ],
+      "frame_size": [
+        688,
+        464
+      ],
+      "frames": 10,
+      "fps": 12,
+      "bbox_width_range": [
+        209,
+        314
+      ],
+      "bbox_height_range": [
+        332,
+        375
+      ],
+      "foot_x_before": [
+        318.0,
+        358.4
+      ],
+      "foot_y_before": [
+        393.0,
+        419.0
+      ],
+      "target_anchor": [
+        334.5,
+        419.0
+      ],
+      "max_shift_x": 24,
+      "max_shift_y": 26
+    },
+    "right": {
+      "file": "LVL2/sprite_righ.png",
+      "image_size": [
+        8760,
+        293
+      ],
+      "frame_size": [
+        292,
+        293
+      ],
+      "frames": 30,
+      "fps": 12,
+      "bbox_width_range": [
+        252,
+        292
+      ],
+      "bbox_height_range": [
+        281,
+        293
+      ],
+      "foot_x_before": [
+        119.8,
+        213.3
+      ],
+      "foot_y_before": [
+        292.0,
+        292.0
+      ],
+      "target_anchor": [
+        159.2,
+        292.0
+      ],
+      "max_shift_x": 54,
+      "max_shift_y": 0
+    },
+    "downRight": {
+      "file": "LVL2/sprite_down_right.png",
+      "image_size": [
+        4128,
+        464
+      ],
+      "frame_size": [
+        688,
+        464
+      ],
+      "frames": 6,
+      "fps": 12,
+      "bbox_width_range": [
+        179,
+        252
+      ],
+      "bbox_height_range": [
+        282,
+        288
+      ],
+      "foot_x_before": [
+        320.7,
+        358.6
+      ],
+      "foot_y_before": [
+        375.0,
+        381.0
+      ],
+      "target_anchor": [
+        338.5,
+        381.0
+      ],
+      "max_shift_x": 20,
+      "max_shift_y": 6
+    },
+    "upRight": {
+      "file": "LVL2/sprite_up_right.png",
+      "image_size": [
+        16512,
+        464
+      ],
+      "frame_size": [
+        688,
+        464
+      ],
+      "frames": 24,
+      "fps": 14,
+      "bbox_width_range": [
+        301,
+        375
+      ],
+      "bbox_height_range": [
+        309,
+        316
+      ],
+      "foot_x_before": [
+        291.1,
+        390.7
+      ],
+      "foot_y_before": [
+        398.0,
+        401.0
+      ],
+      "target_anchor": [
+        340.4,
+        401.0
+      ],
+      "max_shift_x": 50,
+      "max_shift_y": 3
+    },
+    "up": {
+      "file": "LVL2/sprite_up.png",
+      "image_size": [
+        3984,
+        302
+      ],
+      "frame_size": [
+        332,
+        302
+      ],
+      "frames": 12,
+      "fps": 12,
+      "bbox_width_range": [
+        221,
+        332
+      ],
+      "bbox_height_range": [
+        286,
+        302
+      ],
+      "foot_x_before": [
+        141.3,
+        177.7
+      ],
+      "foot_y_before": [
+        301.0,
+        301.0
+      ],
+      "target_anchor": [
+        153.8,
+        301.0
+      ],
+      "max_shift_x": 24,
+      "max_shift_y": 0
+    },
+    "idleFront": {
+      "file": "LVL2/sprite_idle_front.png",
+      "image_size": [
+        4816,
+        464
+      ],
+      "frame_size": [
+        688,
+        464
+      ],
+      "frames": 7,
+      "fps": 6,
+      "bbox_width_range": [
+        273,
+        327
+      ],
+      "bbox_height_range": [
+        395,
+        413
+      ],
+      "foot_x_before": [
+        307.5,
+        319.0
+      ],
+      "foot_y_before": [
+        432.0,
+        441.0
+      ],
+      "target_anchor": [
+        311.6,
+        441.0
+      ],
+      "max_shift_x": 7,
+      "max_shift_y": 9
+    },
+    "idleBack": {
+      "file": "LVL2/sprite_idle_back.png",
+      "image_size": [
+        4236,
+        342
+      ],
+      "frame_size": [
+        353,
+        342
+      ],
+      "frames": 12,
+      "fps": 6,
+      "bbox_width_range": [
+        267,
+        333
+      ],
+      "bbox_height_range": [
+        318,
+        326
+      ],
+      "foot_x_before": [
+        157.9,
+        192.4
+      ],
+      "foot_y_before": [
+        333.0,
+        333.0
+      ],
+      "target_anchor": [
+        183.6,
+        333.0
+      ],
+      "max_shift_x": 26,
+      "max_shift_y": 0
+    },
+    "attack": {
+      "file": "LVL2/sprite_attack.png",
+      "image_size": [
+        11016,
+        392
+      ],
+      "frame_size": [
+        459,
+        392
+      ],
+      "frames": 24,
+      "fps": 16,
+      "bbox_width_range": [
+        217,
+        459
+      ],
+      "bbox_height_range": [
+        287,
+        392
+      ],
+      "foot_x_before": [
+        181.7,
+        283.0
+      ],
+      "foot_y_before": [
+        391.0,
+        391.0
+      ],
+      "target_anchor": [
+        239.1,
+        391.0
+      ],
+      "max_shift_x": 57,
+      "max_shift_y": 0
+    },
+    "death": {
+      "file": "LVL2/sprite_death.png",
+      "image_size": [
+        15824,
+        464
+      ],
+      "frame_size": [
+        688,
+        464
+      ],
+      "frames": 23,
+      "fps": 12,
+      "bbox_width_range": [
+        387,
+        564
+      ],
+      "bbox_height_range": [
+        140,
+        330
+      ],
+      "foot_x_before": [
+        277.5,
+        493.4
+      ],
+      "foot_y_before": [
+        403.0,
+        421.0
+      ],
+      "target_anchor": [
+        474.7,
+        421.0
+      ],
+      "max_shift_x": 197,
+      "max_shift_y": 18
+    }
+  },
+  "dragon": {
+    "idle": {
+      "file": "dragon/sprite_dragon.png",
+      "image_size": [
+        6144,
+        256
+      ],
+      "frame_size": [
+        256,
+        256
+      ],
+      "frames": 24,
+      "fps": 12,
+      "bbox_width_range": [
+        153,
+        222
+      ],
+      "bbox_height_range": [
+        99,
+        168
+      ],
+      "foot_x_before": [
+        136.1,
+        200.1
+      ],
+      "foot_y_before": [
+        167.0,
+        234.0
+      ],
+      "target_anchor": [
+        140.1,
+        234.0
+      ],
+      "max_shift_x": 60,
+      "max_shift_y": 67
+    }
+  }
+}
