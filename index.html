@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Dragon Arena Stream Build</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="appShell">
+    <aside id="controlPanel" aria-label="Панель спавна">
+      <div class="panelTitle">SUMMON QUEUE</div>
+      <button class="spawnBtn level1" data-level="1">1 · LVL 1</button>
+      <button class="spawnBtn level2" data-level="2">2 · LVL 2</button>
+      <button class="spawnBtn level3" data-level="3">3 · LVL 3</button>
+      <button class="spawnBtn level4" data-level="4">4 · LVL 4</button>
+      <button class="spawnBtn level5" data-level="5">5 · LVL 5</button>
+      <div id="statusText">Нажми на уровень, чтобы призвать героя. Во время смерти или эволюции дракона новые герои автоматически встают в очередь до нового раунда.</div>
+    </aside>
+
+    <div id="stageFrame" aria-label="Игровая область 9 на 16">
+      <div id="stage">
+        <div id="bg"></div>
+        <div id="ringsLayer"></div>
+        <div id="entitiesLayer"></div>
+        <div id="fxLayer"></div>
+        <div id="noticeLayer" aria-live="polite"></div>
+
+        <div id="winnerOverlay" class="winner-overlay hidden" aria-live="polite">
+          <div class="winner-overlay-card">
+            <div class="winner-overlay-title">🏆 DRAGON SLAYER 🏆</div>
+            <img id="winnerOverlayAvatar" class="winner-overlay-avatar" alt="Winner avatar" />
+            <div id="winnerOverlayName" class="winner-overlay-name">WINNER</div>
+            <div class="winner-overlay-subtitle">Новый чемпион раунда</div>
+          </div>
+        </div>
+
+        <div id="lastWinners" class="last-winners" aria-label="Последние победители">
+          <div class="last-winners-title">🏆 LAST WINNERS 🏆</div>
+          <div class="last-winners-list">
+            <div class="last-winner-slot" id="lastWinnerSlot1">
+              <img id="lastWinnerAvatar1" class="last-winner-avatar" alt="Winner 1" />
+              <div id="lastWinnerName1" class="last-winner-name">---</div>
+            </div>
+            <div class="last-winner-slot" id="lastWinnerSlot2">
+              <img id="lastWinnerAvatar2" class="last-winner-avatar" alt="Winner 2" />
+              <div id="lastWinnerName2" class="last-winner-name">---</div>
+            </div>
+            <div class="last-winner-slot" id="lastWinnerSlot3">
+              <img id="lastWinnerAvatar3" class="last-winner-avatar" alt="Winner 3" />
+              <div id="lastWinnerName3" class="last-winner-name">---</div>
+            </div>
+          </div>
+        </div>
+
+
+        <aside id="streamTopLeft" class="stream-top-card left" aria-label="All time top summoner">
+          <div class="stream-top-kicker">ALL TIME TOP</div>
+          <div class="stream-top-title">Top Summoner</div>
+          <div class="top-summoner-core">
+            <div class="top-avatar-orbit">
+              <svg class="top-name-orbit" viewBox="0 0 160 160" aria-hidden="true">
+                <defs>
+                  <path id="topNameOrbitPath" d="M80,80 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"></path>
+                </defs>
+                <text>
+                  <textPath id="topNameOrbitText" href="#topNameOrbitPath" startOffset="50%" text-anchor="middle"></textPath>
+                </text>
+              </svg>
+              <img id="topSummonerAvatar" class="top-summoner-avatar" alt="Top summoner avatar" />
+              <div id="topSummonerCount" class="top-summoner-count">0</div>
+            </div>
+          </div>
+        </aside>
+
+        <aside id="streamTopRight" class="stream-top-card right" aria-label="Top dragon record">
+          <div class="stream-top-kicker">TOP DRAGON</div>
+          <div class="top-dragon-core">
+            <img id="topDragonAvatar" class="top-dragon-avatar" src="assets/ui/dragon_record.png" alt="Dragon record" />
+            <div id="topDragonLevel" class="top-dragon-level">MAX LVL 1</div>
+          </div>
+        </aside>
+
+        <div id="dragon" class="entity dragon">
+          <div class="hplabel" id="dragonLabel">Dragon 800/800</div>
+          <div class="hpbar"><div class="hpfill dragonFill" id="dragonHP"></div></div>
+          <div class="sprite" id="dragonSprite"></div>
+        </div>
+        <div id="moveMarker"></div>
+        <div id="editorLayer"></div>
+      </div>
+    </div>
+  </div>
+
+  <button id="devWidgetToggle" class="dev-widget-toggle" type="button" aria-label="Открыть панель разработчика">DEV</button>
+  <aside id="devWidget" class="dev-widget hidden" aria-label="Панель разработчика">
+    <div class="dev-widget-header">
+      <span>Developer Panel</span>
+      <div class="dev-widget-header-actions">
+        <button id="devHandlesToggle" class="dev-mini-btn" type="button">Точки: ON</button>
+        <button id="devWidgetClose" class="dev-mini-btn danger" type="button">✕</button>
+      </div>
+    </div>
+    <div class="dev-widget-body">
+      <div class="dev-widget-row">
+        <button id="devCompactToggle" class="dev-chip" type="button">Свернуть секции</button>
+        <button id="devResetView" class="dev-chip" type="button">Сбросить вид</button>
+      </div>
+      <div class="dev-widget-sections" id="devWidgetSections"></div>
+      <label class="dev-label" for="devExportBox">JSON позиций</label>
+      <textarea id="devExportBox" readonly spellcheck="false"></textarea>
+    </div>
+  </aside>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
